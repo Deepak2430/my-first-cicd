@@ -9,7 +9,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Check Docker Version
-      run: docker --Version
+      run: docker --version
     - name: Docker build image
       run: docker build -t demo-cicd:latest .
     - name: Run docker container
